@@ -73,12 +73,10 @@ unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 {
 	unsigned int ret = 0;
 	char width = ' ';
-
-	if (NEG_FLAG == 1)
-	{
-		for (wid -= printed; wid > 0; wid--)
-			ret += _memcpy(output, &width, 1);
-	}
-
-       	return (ret);
+if (NEG_FLAG == 1)
+{
+for (wid -= printed; wid > 0; wid--)
+ret += _memcpy(output, &width, 1);
+}
+return (ret);
 }
