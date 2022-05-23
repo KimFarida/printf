@@ -11,7 +11,7 @@ int (*_select_func(char c))(va_list)
       return(_print_str);
 
   if (c == 'd')
-      return(_print_numbers);
+      return(_print_int);
 
 
       return(NULL);
